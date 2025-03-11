@@ -11,14 +11,14 @@ void bfs(int src)
 
     while(!q.empty())
     {
-        // ber kore ana
+        // Pull
         int par = q.front();
         q.pop();
 
-        // oi node ke niye kaj
+        // Work
         cout << par << " ";
 
-        // children gulo push kora
+        // Push
         for(int child : adj_list[par])
         {
             if(!vis[child])
